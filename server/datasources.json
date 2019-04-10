@@ -1,0 +1,17 @@
+{
+  "memory": {
+    "name": "memory",
+    "connector": "memory"
+  },
+  "db": {
+    "name": "db",
+    "connector": "loopback-connector-sqlite3",
+    "file": "db.sqlite3"
+  },
+  "Container": {
+    "name": "Container",
+    "connector": "loopback-component-storage",
+	"provider": "filesystem",
+	"root": "./catkeep"
+  }
+}
