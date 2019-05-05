@@ -11,7 +11,7 @@
   "Container": {
     "name": "Container",
     "connector": "loopback-component-storage",
-	"provider": "filesystem",
-	"root": "./catkeep"
+    "provider": "filesystem",
+    "root": "./catkeep"
   }
 }

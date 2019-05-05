@@ -10,13 +10,40 @@
       "type": "string",
       "required": true
     },
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "caption": {
+      "type": "string",
+      "required": false
+    },
     "datetime": {
       "type": "date",
-      "required": true
+      "defaultFn": "now"
     }
   },
   "validations": [],
   "relations": {},
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

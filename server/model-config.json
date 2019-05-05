@@ -42,5 +42,9 @@
   "storage": {
     "dataSource": "Container",
     "public": true
+  },
+  "Comment": {
+    "dataSource": "db",
+    "public": true
   }
 }
